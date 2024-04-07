@@ -13,6 +13,7 @@
   hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short --max-count=10
   rebase-master = !git co master && git pom && git co - && git rebase -i master
   plog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
+  undo = reset HEAD~1
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
